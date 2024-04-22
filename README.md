@@ -1,5 +1,6 @@
 # Zipcode_Locator
-Simple program created to help a friend with their work so they wouldn't have to look up hundreds of zipcodes manually. OpenCage Geocode API was a free API used to create the program. This was a one time use program so it's a little rough around the edges in terms of operation. 
+Simple program created to help a friend with their work so they wouldn't have to look up hundreds of zipcodes manually. OpenCage Geocode API was a free API used to create the program. This was a one time use program so it's a little rough around the edges in terms of operation. <br><br>
+Note: The API key has been removed so if you are wanting to run the program you would need to get a free key from OpenCage.
 # How the program works
 <ol>
   <li>The Parse file takes an input from a CSV file and outputs a list in a format that the Geocode API can use.</li>
