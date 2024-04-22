@@ -1,0 +1,21 @@
+# Replace 'your_file.txt' with the path to the file containing the coordinates.
+file_path = 'coordinates.txt'
+
+# Prepare an empty list to hold the tuples
+coordinates_list = []
+
+# Open the file and read line by line
+with open(file_path, 'r') as file:
+    # Skip the header or any unwanted lines
+    next(file)
+    for line in file:
+        # Check if the line is not just whitespace
+        if line.strip():
+            # Split each line on whitespace and create a tuple of floats
+            parts = line.split()
+            lat, lon = parts[0], parts[-1]  # assumes the lat & long are the first and last items on each line
+            coordinates_list.append((float(lat), float(lon)))
+
+# Print out the list of tuples
+for coordinate in coordinates_list:
+    print(coordinate, end=',\n')
